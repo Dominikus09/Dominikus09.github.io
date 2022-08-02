@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Belajar Tailwind CSS | GIT</title>
+    <!-- <style type="text/tailwindcss">
+      * {
+        border: 1px solid red;
+      }
+    </style> -->
+  </head>
+  <body class="relative">
+    <!-- Navbar -->
+    <nav class="shadow-xl bg-slate-100 fixed top-0 left-0 right-0">
+      <div class="p-4 mx-auto max-w-5xl">
+        <div class="flex justify-between">
+          <div class="font-medium">Dominikus</div>
+          <div class="space-x-10">
+            <a href="" class="hover:text-lg hover:text-violet-800">Home</a>
+            <a href="#form" class="hover:text-lg hover:text-violet-800"
+              >About</a
+            >
+            <a href="" class="hover:text-lg hover:text-violet-800">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Profile -->
+    <section class="mt-24 mb-10 mx-auto max-w-5xl">
+      <div class="container lg:flex">
+        <div class="container flex justify-center sm:justify-start">
+          <!-- Gambar Profile -->
+          <div>
+            <img
+              src="nenad-novakovic-L2QB-rG5NM0-unsplash.jpg"
+              alt="profile"
+              class="w-32 rounded-full h-32 shadow-lg shadow-gray-500 mr-4"
+            />
+          </div>
+          <!-- End gambar profile -->
+          <!-- Data Diri -->
+          <div class="p-6">
+            <!-- Nama, status, alamat -->
+            <div>
+              <h4 class="font-medium">Dominikus Andika Kurnawan</h4>
+              <div class="jarak inline-flex space-x-4">
+                <p class="b1 my-2">Mahasiswa</p>
+                <p class="b2 my-2">Bina Nusantara University</p>
+              </div>
+              <p class="">Palmerah, Jakarta Barat</p>
+            </div>
+            <!-- Nama, status, alamat -->
+            <!-- Follow and notification -->
+            <div class="flex">
+              <!-- Follow Button -->
+              <div class="mt-4">
+                <button
+                  class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 font-semibold text-white px-8 py-2 rounded-lg active:from-indigo-200 active:via-purple-200 active:to-pink-200 active:border-2 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 focus:bg-violet-400"
+                >
+                  Follow
+                </button>
+              </div>
+              <!-- End Follow Button -->
+              <!-- Notification -->
+              <div class="my-4 mx-4">
+                <a href="" class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 fill-purple-400 animate-pulse active:animate-ping"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- End Notification -->
+            </div>
+            <!-- End Follow and notification -->
+          </div>
+          <!-- End data diri -->
+        </div>
+        <!-- Score, Pengikut, Diikuti -->
+        <div class="">
+          <div
+            class="container mt-14 lg:mt-14 flex justify-evenly lg:justify-self-start gap-8"
+          >
+            <!-- Score -->
+            <div
+              class="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-200"
+            >
+              <div>
+                <span
+                  class="font-semibold flex justify-center text-5xl lg:text-4xl"
+                  >720</span
+                >
+              </div>
+              <div>
+                <p class="font-medium text-base flex justify-center">Score</p>
+              </div>
+            </div>
+            <!-- End Score -->
+            <!-- Pengikut -->
+            <div
+              class="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-200"
+            >
+              <div>
+                <span
+                  class="font-semibold flex justify-center text-5xl lg:text-4xl"
+                  >1,200</span
+                >
+              </div>
+              <div>
+                <p class="font-medium text-base flex justify-center">
+                  Pengikut
+                </p>
+              </div>
+            </div>
+            <!-- End Pengikut -->
+            <!-- Diikuti -->
+            <div
+              class="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-200"
+            >
+              <div>
+                <span
+                  class="font-semibold flex justify-center text-5xl lg:text-4xl"
+                  >923</span
+                >
+              </div>
+              <div>
+                <p class="font-medium text-base flex justify-center">Diikuti</p>
+              </div>
+            </div>
+            <!-- End Diikuti -->
+          </div>
+        </div>
+        <!-- End Score, Pengikut, Diikuti -->
+      </div>
+      <hr class="my-10" />
+    </section>
+    <!-- End Profile -->
+
+    <!-- Isi  -->
+    <section class="mb-10 mx-auto mt-10 max-w-5xl">
+      <h2 class="mb-4 text-4xl font-semibold">Learn TailwindCSS</h2>
+      <!-- Color -->
+      <div class="mb-4 text-gray-700">
+        by
+        <a href="#" class="mb-4 text-gray-700 font-semibold"
+          >Dominikus Andika Kurniawan</a
+        >, 26 July 2022
+      </div>
+      <p class="mb-4">
+        Berikut adalah file HTML yang saya buat sebagai projek saya dalam
+        mempelajari penggunaan TailwindCSS. Summary yang saya buat sudah ada
+        pada file HTML ini.
+      </p>
+      <hr class="my-10" />
+      <h3 class="mb-10 text-4xl font-sans font-semibold flex justify-center">
+        Summary
+      </h3>
+      <div class="sub-Title mb-4 mt-4 text-gray-700 font-semibold">
+        <li>TailwindCSS Font</li>
+      </div>
+      <blockquote class="mb-4 italic font-thin">
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ipsum,
+        consequuntur ratione molestiae nostrum alias ullam, aperiam magni
+        deleniti adipisci ex eos et, repellat soluta fuga! Dignissimos in
+        similique consequatur.""
+      </blockquote>
+
+      <!-- card -->
+      <div class="sub-Title mb-4 mt-4 text-gray-700 font-semibold">
+        <li>TailwindCSS Card</li>
+      </div>
+      <div class="container mx-auto">
+        <div class="border rounded-lg p-10 shadow-lg">
+          <img
+            src="nenad-novakovic-L2QB-rG5NM0-unsplash.jpg"
+            alt="profile"
+            class="w-32 rounded-xl h-32 mr-4 float-left"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+            excepturi iusto minus placeat voluptates corrupti. Eaque corporis
+            rem, odit perferendis labore adipisci culpa. Commodi eligendi cumque
+            molestiae doloremque blanditiis repellat. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Officia, eum quisquam! Possimus
+            obcaecati ullam repellat beatae excepturi alias, quam laborum minus
+            neque, tenetur quasi dolorem, molestiae nemo. Debitis, modi
+            voluptas.
+          </p>
+        </div>
+        <p class="my-8">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+          maxime, eveniet quis aspernatur ratione facilis ullam facere, qui
+          mollitia quia repudiandae earum, dolorem perspiciatis accusamus quos
+          adipisci voluptate recusandae deserunt.
+        </p>
+      </div>
+      <!-- End Card -->
+    </section>
+    <!-- End ISI -->
+    <!-- Scroling, Image, and background -->
+    <section class="mb-10 mx-auto mt-10 max-w-5xl">
+      <div class="sub-Title mb-4 mt-4 text-gray-700 font-semibold">
+        <li>TailwindCSS Scrolling and Image background</li>
+      </div>
+      <div
+        class="max-w-full h-96 my-1 mt-5 bg-slate-300 shadow-2xl overflow-y-scroll bg-fixed rounded-3xl"
+        style="
+          background-image: url('https://source.unsplash.com/1000x600/?aestetic');
+        "
+      >
+        <img
+          src="nenad-novakovic-L2QB-rG5NM0-unsplash.jpg"
+          alt="profile"
+          class="w-32 rounded-xl h-32 ml-8 mt-8 mr-4 float-left"
+        />
+        <p
+          class="m-4 z-10 p-4 bg-gray-500 bg-opacity-70 rounded-3xl font-serif font-normal"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad
+          distinctio architecto. Ratione nisi obcaecati, molestiae suscipit eos
+          aut exercitationem odio laboriosam mollitia odit voluptate eum dolores
+          iusto totam ipsa. Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Quo aut reiciendis quas perspiciatis facere illum aspernatur
+          animi, recusandae minima, tempora unde voluptas! Nam perspiciatis
+          repellendus repellat tenetur? Corrupti, voluptatibus aperiam? Lorem,
+          ipsum dolor sit amet consectetur adipisicing elit. Sint corrupti,
+          minus assumenda ipsam fugiat aut dolores, architecto quae earum
+          officia maiores id cupiditate iusto, molestias alias illum labore
+          voluptatem ea. Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Quas nihil natus doloremque corrupti veniam ut ad odit
+          temporibus distinctio tempore minima, dignissimos aliquid
+          necessitatibus iste voluptate dolorum excepturi repellat eaque. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Corporis porro
+          incidunt aliquam, earum temporibus excepturi accusamus natus
+          perferendis quis, voluptates placeat illum labore voluptas, rem
+          mollitia ab facilis optio nobis. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Soluta, eligendi. Numquam eius excepturi
+          autem eaque tempore commodi molestias, suscipit possimus recusandae
+          accusantium soluta quasi. Nostrum quis illum placeat officiis
+          similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Voluptatum cumque porro ratione. Dolore totam cumque velit earum sunt
+          hic, alias nobis vel, unde voluptatibus, voluptatem molestias. Quas
+          esse fugit molestias? Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Totam, aut laboriosam non nemo ipsum cum explicabo
+          nulla soluta reprehenderit debitis rem, tempora neque dignissimos
+          praesentium, quos possimus veniam quis nisi! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Vero, harum cupiditate voluptatibus
+          sed ratione praesentium, recusandae, sit debitis natus perspiciatis
+          quas culpa mollitia doloribus dolor sint. Rerum voluptatum quaerat
+          corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Modi earum, in eaque molestiae quisquam architecto nemo ipsum natus,
+          fugiat dolorum vel velit molestias veniam tenetur id maxime porro
+          unde? Adipisci! Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Similique doloribus dolorum libero excepturi veritatis dolor
+          magni, tempora, optio ex in ea accusantium voluptatibus nobis quos,
+          molestiae commodi maxime. Quis, aperiam.
+        </p>
+      </div>
+    </section>
+    <!-- End Scroling -->
+
+    <!-- Form Section -->
+    <section class="mb-10 mx-auto mt-14 max-w-5xl" id="form">
+      <hr class="b1 mt-20" />
+      <div
+        class="mb-4 mt-8 text-gray-700 text-xl flex justify-center font-semibold"
+      >
+        Create Form and Table TailwindCSS
+      </div>
+      <!-- Pembungkus -->
+      <div class="lg:grid grid-cols-2 gap-4">
+        <!-- Form -->
+        <div
+          class="w-full md:max-w-lg lg:max-w-xl mx-auto block mt-10 border border-slate-200 rounded-xl shadow-md shadow-indigo-300 font-thin p-5"
+        >
+          <form action="">
+            <div class="mb-5 flex justify-center">
+              <label for="" class="font-semibold">Masukan Data</label>
+            </div>
+            <label for="" class="font-semibold">NIM</label>
+            <input
+              type="text"
+              placeholder="Masukan nim anda"
+              class="px-3 py-2 mt-3 border shadow rounded w-full block text-sm"
+            />
+            <div class="mt-3">
+              <label for="" class="font-semibold">Nama</label>
+            </div>
+            <input
+              type="text"
+              placeholder="Masukan nama anda"
+              class="px-3 py-2 mt-3 border shadow rounded w-full block text-sm"
+            />
+            <div class="mt-3">
+              <label for="" class="font-semibold">Jurusan</label>
+            </div>
+            <input
+              type="text"
+              placeholder="Masukan jurusan anda"
+              class="px-3 py-2 mt-3 border shadow rounded w-full block text-sm"
+            />
+            <div class="mt-14 flex justify-center">
+              <button
+                class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 font-semibold text-white w-full py-2 rounded-3xl active:from-indigo-50 active:via-purple-50 active:to-pink-50 active:border-4 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 focus:bg-violet-400"
+              >
+                Simpan
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- End Form -->
+
+        <!-- Table -->
+        <div
+          class="max-w-2xl mt-10 border block mx-auto border-slate-200 rounded-xl shadow-md shadow-indigo-300 font-thin"
+        >
+          <table
+            class="table-auto mx-auto border-separate border-spacing-7 border-opacity-0"
+          >
+            <thead class="border-b-2">
+              <tr>
+                <th class="">NIM</th>
+                <th>Nama</th>
+                <th>Jurusan</th>
+              </tr>
+            </thead>
+            <div class="border-3">
+              <tbody class=" ">
+                <tr class="">
+                  <td class="">2440056972</td>
+                  <td class="">Dominikus Andika Kurniawan</td>
+                  <td class="">Sistem Informasi dan Manajemen</td>
+                </tr>
+              </tbody>
+            </div>
+          </table>
+        </div>
+        <!-- En Table -->
+      </div>
+      <!-- End Pembungkus -->
+    </section>
+    <!-- End Form Section -->
+
+    <!-- Gird Image -->
+    <section class="max-w-5xl mx-auto">
+      <!-- Line -->
+      <hr class="b1 mt-20" />
+      <!-- End Line -->
+
+      <!-- Sub title -->
+      <div
+        class="mb-4 mt-8 text-gray-700 text-xl flex justify-center font-semibold"
+      >
+        Create Flex Image TailwindCSS
+      </div>
+      <!-- End Sub-Title -->
+
+      <!-- Image Gird -->
+      <div class="container mx-auto">
+        <div class="rounded-xl p-4 border-2 shadow-xl shadow-gray-300">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsa
+            dolores adipisci excepturi! Tempora exercitationem officia
+            quibusdam, possimus suscipit tenetur aperiam necessitatibus maxime
+            explicabo? Adipisci mollitia numquam consectetur quae consequatur.
+          </p>
+          <div class="sm:flex sm:flex-wrap sm:gap-2 sm:justify-evenly">
+            <!-- Card  Image 1 -->
+            <div
+              class="w-full sm:w-64 lg:w-80 p-4 mt-4 border-2 shadow-xl active:bg-slate-600 rounded-xl hover:shadow-lg hover:shadow-violet-400"
+            >
+              <img class="rounded-xl" src="img/7.jpg" alt="" />
+
+              <div class="flex justify-between">
+                <div>
+                  <p class="font-semibold mt-4 text-lg">Name Image</p>
+                  <p>Deskripsi singkat tentang Imagae</p>
+                </div>
+                <a href="" class="font-medium mt-4">Detail</a>
+              </div>
+            </div>
+            <!-- End card Image 1 -->
+
+            <!-- Card  Image 1 -->
+            <div
+              class="w-full sm:w-64 lg:w-80 p-4 mt-4 border-2 shadow-xl rounded-xl hover:shadow-lg hover:shadow-violet-400"
+            >
+              <img class="rounded-xl" src="img/8.jpg" alt="" />
+              <div class="flex justify-between">
+                <div>
+                  <p class="font-semibold mt-4 text-lg">Name Image</p>
+                  <p>Deskripsi singkat tentang Imagae</p>
+                </div>
+                <a href="" class="font-medium mt-4">Detail</a>
+              </div>
+            </div>
+            <!-- End card Image 1 -->
+
+            <!-- Card  Image 1 -->
+            <div
+              class="w-full sm:w-64 lg:w-80 p-4 mt-4 border-2 shadow-xl rounded-xl hover:shadow-lg hover:shadow-violet-400"
+            >
+              <img class="rounded-xl" src="img/7.jpg" alt="" />
+              <div class="flex justify-between">
+                <div>
+                  <p class="font-semibold mt-4 text-lg">Name Image</p>
+                  <p>Deskripsi singkat tentang Imagae</p>
+                </div>
+                <a href="" class="font-medium mt-4">Detail</a>
+              </div>
+            </div>
+            <!-- End card Image 1 -->
+
+            <!-- Card  Image 1 -->
+            <div
+              class="w-full sm:w-64 lg:w-80 p-4 mt-4 border-2 shadow-xl rounded-xl hover:shadow-lg hover:shadow-violet-400"
+            >
+              <img class="rounded-xl" src="img/7.jpg" alt="" />
+              <div class="flex justify-between">
+                <div>
+                  <p class="font-semibold mt-4 text-lg">Name Image</p>
+                  <p>Deskripsi singkat tentang Imagae</p>
+                </div>
+                <a href="" class="font-medium mt-4">Detail</a>
+              </div>
+            </div>
+            <!-- End card Image 1 -->
+
+            <!-- Card  Image 1 -->
+            <div
+              class="w-full sm:w-64 lg:w-80 p-4 mt-4 border-2 shadow-xl rounded-xl hover:shadow-lg hover:shadow-violet-400"
+            >
+              <img class="rounded-xl" src="img/8.jpg" alt="" />
+              <div class="flex justify-between">
+                <div>
+                  <p class="font-semibold mt-4 text-lg">Name Image</p>
+                  <p>Deskripsi singkat tentang Imagae</p>
+                </div>
+                <a href="" class="font-medium mt-4">Detail</a>
+              </div>
+            </div>
+            <!-- End card Image 1 -->
+
+            <!-- Card  Image 1 -->
+            <div
+              class="w-full sm:w-64 lg:w-80 p-4 mt-4 border-2 shadow-xl rounded-xl hover:shadow-lg hover:shadow-violet-400"
+            >
+              <img class="rounded-xl" src="img/7.jpg" alt="" />
+              <div class="flex justify-between">
+                <div>
+                  <p class="font-semibold mt-4 text-lg">Name Image</p>
+                  <p>Deskripsi singkat tentang Imagae</p>
+                </div>
+                <a href="" class="font-medium mt-4">Detail</a>
+              </div>
+            </div>
+            <!-- End card Image 1 -->
+          </div>
+        </div>
+      </div>
+      <!-- End Image Gird -->
+    </section>
+    <!-- End Gird Image -->
+
+    <!-- Question -->
+    <section class="max-w-5xl mx-auto">
+      <!-- Line -->
+      <hr class="b1 mt-20" />
+      <!-- End Line -->
+
+      <!-- Sub title -->
+      <div
+        class="mb-4 mt-8 text-slate-800 text-3xl flex justify-center font-semibold"
+      >
+        Question?
+      </div>
+      <!-- End Sub-Title -->
+      <!-- Body Question -->
+      <div class="mx-10">
+        <li>
+          Bagaimana cara membuat panjang dari suatu card dalam sebuah flex
+          mengikuti panjang dari isi card tersebut?
+        </li>
+      </div>
+      <!-- End Body question -->
+    </section>
+    <!-- End Question -->
+  </body>
+  <footer class="mb-12">
+    <hr class="my-10" />
+    <div class="max-w-5xl mx-auto">
+      <h6>create by Dominius Andika Kurniawan</h6>
+    </div>
+  </footer>
+</html>
